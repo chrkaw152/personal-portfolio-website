@@ -1,0 +1,256 @@
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    background-color: #EEEEEE;
+    color: #212A3E;
+    margin: 0;
+}
+
+.main {
+    margin-top: 10%; /* used to be 7 */
+    margin-left: 1%;
+    text-align: center;
+}
+
+.home {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.home p {
+    text-align: justify;
+}
+
+.home h2 {
+    font-size: 200%;
+}
+
+.picture {
+    width: 215px;  
+    height: 215px;  
+    border-radius: 50%; 
+    object-fit: cover;
+    box-shadow: 0 2px 8px 4px #93bfcf96;
+}
+
+p {
+    font-size: 108%;
+}
+
+.contactButtons a {
+    padding-right: 0.5%;
+    text-decoration: none;
+}
+
+.contactButtons img {
+    width: 3.5%;
+    transition: all 0.2s;
+}
+
+.contactButtons img:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+#resume {
+    font-size: 108%;
+    transition: color 0.2s;
+    color: #7C96AB;
+}
+
+#resume:hover {
+    color: #93BFCF;
+}
+
+.aboutSection, .reflectSection {
+    width: 85%;
+    text-align: justify;
+    margin: auto;
+}
+
+.headings {
+    text-align: center;
+}
+
+footer {
+    margin-top: 5%;
+    background-color: #93BFCF;
+    padding: 3%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+
+/* NAV BAR */
+.navbar {
+    background-color: #93BFCF;
+    font-size: 125%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    height: 60px;
+    border-bottom: #EEEEEE solid 3px;
+}
+  
+.navbar a {
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 14px 16px;
+    float: left;
+    display: block;
+    transition: all 0.4s;
+}
+  
+.navbar a:hover {
+    background-color: #7C96AB;
+    color: #212A3E;
+}
+
+#home, #about, #projects, #ecs, #reflect {
+    scroll-margin-top: 100px; /* so the nav bar link goes to the header and not the body text */
+}
+  
+
+/* EC CONTAINER */
+.ecContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%; 
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.ecItem {
+    background-color: #212A3E;
+    color: #EEEEEE;
+    border-radius: 15px;
+    padding: 5%;
+    transition: all 0.2s;
+}
+
+.ecItem:hover {
+    opacity: 0.9;
+}
+
+
+/* PROJECT SLIDESHOW CAROUSEL */
+.projectsSlideshow {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden; /* hide inactive projects */
+    border-radius: 30px;
+}
+  
+.project {
+    display: none; /* initially hide all projects */
+    position: relative;
+    width: 100%;
+}
+
+.project.active {
+    display: block; /* show the project */
+}
+
+.project:hover {
+    cursor: pointer;
+}
+  
+.project img {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+    border-radius: 30px;
+    opacity: 0.8;
+    box-shadow: 0 4px 12px 4px #93bfcf96;
+}
+
+.caption {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    /* background-color: #eeeeee8d; */
+    /* box-shadow: 0 4px 8px #212a3e5e; */
+    color: #EEEEEE;
+    width: 80%;
+    max-width: 550px;
+    padding: 1%;
+    border-radius: 15px;
+    font-size: 110%;
+    z-index: 3;
+}
+
+.caption h2 {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    color: #bcecff;
+}
+
+.caption p {
+    margin-bottom: 0.01%;
+    line-height: 1.25;
+}
+
+.backButton, .nextButton {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 25px;
+    transition: 0.3s ease;
+    user-select: none;
+    color: #bcecff;
+    background: none;
+    /* background: #EEEEEE; */
+    border: none;
+}
+
+.backButton {
+    left: 1%;
+    border-radius: 0 3px 3px 0;
+  }
+
+.nextButton {
+    right: 1%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* .backButton:hover, .nextButton:hover {
+    background: #7C96AB;
+    opacity: 0.7;
+    color: #EEEEEE;
+} */
+
+.dots-container {
+    margin-top: 2%;
+    text-align: center;
+    padding: 3px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #7C96AB;
+    opacity: 0.4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.dot.active-dot, .dot:hover {
+    background-color: #7C96AB;
+    opacity: 1;
+}

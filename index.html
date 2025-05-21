@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christine Kawibowo's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class = "navbar">
+        <a href="#home">Christine Kawibowo</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#ecs">Extracurriculars</a>
+        <a href="#reflect">Reflections</a>
+    </nav>
+
+    <div class = "main">
+        <div class = "home">
+            <img id = "home" src = "portfolio picture.png" width = "16%" class = "picture">
+            <h2>Christine Kawibowo</h2>
+            <p>
+                Hi! I'm Christine, a senior at Glen A. Wilson High School with a strong passion for computer science and helping others.
+                With my leadership experience and active participation in various extracurriculars, I am prepared to take on challenges and offer innovative solutions.
+                I am currently seeking opportunities to apply and expand my knowledge of software development and artificial intelligence in ways that can make a positive impact in people's lives.
+            </p>
+
+            <div class="contactButtons">
+                <a href="mailto:ckawibowo@gmail.com" class="button email-button">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png">
+                </a>
+                <a href="https://www.linkedin.com/in/christine-kawibowo-12757b346" class="button linkedin-button" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png">
+                </a>
+                <a href="https://github.com/chrkaw152" class="button github-button" target="_blank" rel="noopener noreferrer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+                </a>
+            </div>
+            <br>
+            <a id = "resume" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Full Resume &#8599;</a>
+        </div>
+
+        <div class = "aboutSection" style="margin-top: 10%">
+            <h1 id = "about" class = "headings">About</h1>
+            <p>
+                My passion for computer science started in 7th grade, when I learned Java during quarantine. Since then, I've 
+                explored web development, data science, and artificial intelligence. Recently, I've grown more interested in 
+                their application within the medical field.
+                <br><br>
+                I'm currently enrolled in the computer science pathway at Glen A. Wilson High School. In the past, I've taken
+                AP Computer Science Principles, AP Computer Science A, and Cybersecurity Honors. I'm also part of the CODE, Cyber, 
+                and SkillsUSA teams at my school, where I compete in competitions such as ACSL, CyberPatriot, and State Conferences.
+                I was an ACSL Finalist in May of 2025, my team qualified for CyberPatriot Semifinals in December of 2024, and I placed
+                third at SkillsUSA's 2025 State Conference for Computer Programming.
+                <br><br>
+                In the future, I hope to create something that will have a major impact on the lives of others, whether it
+                be a whole community or just a single person. I also hope to graduate college with a Master's Degree and get a good job.
+            </p>
+        </div>
+
+        <h1 id = "projects" class = "headings" style="margin-top: 8%">Projects</h1>
+        <div class="projectsSlideshow">
+            <div id="project1" class="project active" data-project-url="https://studio.code.org/projects/applab/yVE5TJSi9wiXvZ6vXmOqmfizu5gyCJZUDdOcDF4Yw1o">
+                <img src="instagram-2.0.png" alt="Instagram 2.0">
+                <div class = "caption">
+                    <h2>Instagram 2.0</h2>
+                    <p>An app made in Code.org for AP Computer Science Principles.</p>
+                    <p style="font-size: 95%; margin-bottom: 1%;"><i>App Lab, JavaScript</i></p>
+                </div>
+            </div>
+
+            <div id="project2" class="project" data-project-url="https://www.youtube.com/watch?v=e5R13gGELvk&list=LL&index=3">
+                <img src="fridgeco.png" alt="FridgeCo.">
+                <div class = "caption">
+                    <h2>FridgeCo.</h2>
+                    <p>An app to reduce food waste, made with 2 of my peers for the Congressional App Challenge.</p>
+                    <p style="font-size: 95%; margin-bottom: 1%;"><i>Flutterflow, Dart, Firebase, Spoonacular API</i></p>
+                </div>
+            </div>
+
+            <div id="project3" class="project" data-project-url="https://docs.google.com/document/d/1jXfkOs4iwSK84SZmdYYfyP5dOnRhGSp9wEWb_ylYe2Y/edit?usp=sharing">
+                <img src="research.png" alt="Neural Network vs. Human Brain">
+                <div class = "caption">
+                    <h2>Exploring Memory Retention: A Comparison of Neural Networks and Humans</h2>
+                    <p style="margin-bottom: 1%;">A research paper on the similarities and differences in memory retention of neural networks and humans, written for my CS capstone project.</p>
+                </div>
+            </div>
+            
+            <button id="backButton" class="backButton">&#10094;</button>
+            <button id="nextButton" class="nextButton">&#10095;</button>
+
+            <div class="dots-container">
+                <span class="dot active-dot" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+
+        <h1 id = "ecs" class = "headings" style="margin-top: 8%">Extracurriculars</h1>
+        <div class="ecContainer">
+            <div class="ecItem">
+                <h2>Glen A. Wilson CODE Team</h2>
+                <p style="font-size: 115%;">Vice-Captain</p>
+                <p><i>Joined in July 2022</i></p>
+                <p>Lead and teach a team of 15 members while participating in various coding competitions and volunteering in events promoting computer science.</p>
+            </div>
+            <div class="ecItem">
+                <h2>Glen A. Wilson Cyber Assurance Team</h2>
+                <p style="font-size: 115%;">Competitor, Windows Specialist</p>
+                <p><i>Joined in August 2023</i></p>
+                <p>Compete in various cybersecurity competitions while building system security, networking, and forensics skills.</p>
+            </div>
+            <div class="ecItem">
+                <h2>Glen A. Wilson SkillsUSA Chapter</h2>
+                <p style="font-size: 115%;">Co-President</p>
+                <p><i>Joined in August 2023</i></p>
+                <p>Lead a team of 30 members as they develop leadership, technical, and personal skills for their future in the workforce.</p>
+            </div>
+            <div class="ecItem">
+                <h2>Glen A. Wilson UNICEF Chapter</h2>
+                <p style="font-size: 115%;">Historian/Publicity Chair</p>
+                <p><i>Joined in August 2023</i></p>
+                <p>Create graphics, take pictures, and manage social media in order to promote the club and its values.</p>
+            </div>
+            <div class="ecItem">
+                <h2>Certificate of Merit Pianist</h2>
+                <p style="font-size: 115%;">Completed Level 10</p>
+                <p><i>Participated from 2013-2024</i></p>
+                <p>Complete a yearly exam consisting of several pieces of repertoire, ear training, sight reading, and music theory.</p>
+            </div>
+            <div class="ecItem">
+                <h2>Pixelwise Co.</h2>
+                <p style="font-size: 115%;">Co-Founder, AI Coordinator</p>
+                <p><i>Joined in June 2024</i></p>
+                <p>Code AI model and assist with handling company affairs.</p>
+            </div>
+        </div>
+
+        <!--<h1 id = "resume" class = "headings">Resume</h1>
+        <iframe class = "pdf" 
+            src = "resume.pdf" 
+            width = "60%" height = "500px">
+        </iframe>-->
+
+        <div class = "reflectSection" style="margin-top: 8%">
+            <h1 id = "reflect" class = "headings">Reflections</h1>
+            <p>
+                I remember first typing "Hello World" and feeling like I had done something amazing. After that afternoon in the summer
+                of 2020, I made several games with the basic code that I knew: MadLibs, themed math games, and more. The next thing
+                I did was attend a summer coding camp hosted by the CODE Team before my freshman year, where I learned and grew to
+                love web development. That whole summer, I remember making a lot of miscellaneous websites for fun, like a pretend
+                boba shop website. Then came freshman year, where I had so much fun in AP Computer Science Principles. One time, for
+                a mini hackathon, I completely remade the basic functions of Instagram in Code.org. Despite this taking me 
+                days to complete, I never found the coding and debugging process boring. 
+                <br><br>
+                Even though I had already been coding for a few years at that point, I feel like I really started to improve after AP 
+                Computer Science A, where I honed my critical thinking and algorithm skills. By junior year, I was finally able to
+                qualify for ACSL Finals (after two years of trying), which made me feel really accomplished. Now, I'm starting to
+                expand my expertise outside of just taking classes, focusing more on creating projects with real meaning that can 
+                impact more people.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Christine Kawibowo. All Rights Reserved. <br>
+        Coded in Visual Studio Code using HTML, CSS, and JavaScript.
+    </footer>
+
+	<script src="index.js"></script>
+  </body>
+</html>
